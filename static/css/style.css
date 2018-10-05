@@ -1,0 +1,226 @@
+
+html, body, * {
+	padding: 0;
+	margin: 0;
+	background-color: #FCFCFC;
+}
+
+.post-wrapper, .index-wrapper {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.index-wrapper article {
+	align-self: center;
+}
+
+.index-wrapper h1 {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.index-wrapper h1 a, .index-wrapper h2 a {
+	color: black;
+	border-bottom: none;
+}
+
+time {
+	font-family: SF UI Text, sans-serif;
+	font-smoothing: antialiased;
+	font-size: 0.8em;
+	color: #959494;
+	opacity: 0.8;
+}
+
+h1 {
+	font-family: Libre Baskerville, Baskerville, serif;
+	font-weight: 400;
+	font-size: 38pt;
+	line-height: 1.6em;
+	max-width: 800px;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+h2, h3, h4 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-family: SF UI Text, sans-serif;
+}
+
+.description {
+	max-width: 900px;
+	font-family: SF UI Text, sans-serif;
+	text-align: center;
+	font-size: 15pt;
+	line-height: 1.5em;
+	color: rgba(0,0,0,0.4);
+	font-smoothing: antialiased;
+}
+
+.divider {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	width: 800px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.content-wrapper {
+	font-family: Georgia, sans-serif;
+	font-weight: 400;
+	font-size: 19.5px;
+	line-height: 1.75em;
+	opacity: 0.95;
+	letter-spacing: -.003em;
+	font-feature-settings: "liga" on;
+	-moz-font-feature-settings: "liga" on;
+	width: 700px;
+	color: #313131;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+footer, .page-label {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	font-family: SF UI Text, sans-serif;
+	font-smoothing: antialiased;
+	font-size: 0.8em;
+	color: #959494;
+}
+
+.page-label {
+	margin: 0;
+}
+
+a {
+	color: #3648F1;
+	text-decoration: none;
+	border-bottom: 1px dotted #3648F1;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+a:hover {
+	background-color: #F6F5FE;
+}
+
+header {
+	margin: 30px;
+	margin-bottom: 70px;
+}
+
+.home-link {
+	display: inline-block;
+	color: #313131;
+	width: 50px;
+	text-decoration: none;
+	border: none;
+	font-size: 1.15em;
+	font-family: SF UI Text, sans-serif;
+	font-weight: bold;
+}
+
+.home-link:hover {
+	background-color: transparent;
+}
+
+p {
+	margin-bottom: 30px;
+}
+
+blockquote {
+	position: relative;
+	align-self: center;
+}
+
+blockquote > p {
+	padding: 40px;
+	padding-left: 80px;
+	padding-right: 30px;
+	font-size: 16pt;
+	line-height: 1.5em;
+	font-style: italic;
+	background-color: #f6f6f6;
+}
+
+blockquote > p > cite {
+	padding-top: 5px;
+	font-family: SF UI Text, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	display: inline-block;
+	background-color: #f6f6f6;
+	left: 80px;
+	bottom: 20px;
+}
+
+blockquote > p a {
+	background-color: #f6f6f6;
+}
+
+blockquote::before {
+	content: "”";
+	position: absolute;
+	top: 80px;
+	left: -20px;
+	font-size: 96pt;
+	color: #3648F1;
+}
+
+div.content-wrapper > p:first-of-type:first-letter {
+	float: left;
+	font-weight: bold;
+	font-size: 3.5em;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+h1::selection, h2::selection, h3::selection, span::selection, p::selection {
+	background: #E4E7FD;
+}
+
+.summary::selection {
+	background: #E4E7FD;
+}
+
+code {
+	opacity: 0.9;
+}
+
+.index-wrapper > article h2 {
+	font-size: 18pt;
+	color: #313131;
+}
+
+.index-wrapper > article h2::selection {
+	background: #E4E7FD;
+}
+
+.index-wrapper > article {
+	width: 700px;
+	margin-bottom: 30px;
+}
+
+.index-wrapper .summary {
+	margin-top: 7px;
+	font-size: 14pt;
+	line-height: 1.5em;
+	color: #313131;
+}
+
+.index-wrapper > h1 {
+	text-align: center;
+	width: 800px;
+}

@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<main class="index-wrapper">
+		{{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
+		{{ range $paginator.Pages }}
+			{{ partial "summary.html" . }}
+		{{ end }}
+		<div class="divider"></div>
+		{{ partial "pagination.html" . }}
+	</main>
+{{ partial "footer.html" . }}
