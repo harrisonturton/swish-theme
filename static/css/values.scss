@@ -1,0 +1,72 @@
+// This page includes constants, values
+// mixins and resets that are used in the
+// main stylesheet.
+
+// Fonts
+$serif: Libre Baskerville, Baskerville, Palatino, Times New Roman, serif;
+$sans-serif: SF UI Text, Calibri, Helvetica Neue, sans-serif;
+$body: Georgia, serif;
+
+// Font Colors
+$font-color: #313131;
+$dark-font-color: black;
+$light-font-color: #959494;
+$font-highlight: #E4E7FD;
+
+// Page Colors
+$background: #FCFCFC;
+$accent: #3648F1;
+$accent-light: #F6F5FE;
+
+// Responsive Breakpoints
+$mobile-breakpoint: 599px;
+$desktop-breakpoint: 1200px;
+
+@mixin for-mobile {
+	@media (max-width: $mobile-breakpoint) {
+		@content;
+	}
+}
+
+@mixin for-desktop {
+	@media (min-width: $mobile-breakpoint) {
+		@content;
+	}
+}
+
+// Apply styles to specific pagetypes
+@mixin for-single-pages {
+	.single {
+		@content;
+	}
+}
+
+@mixin for-list-pages {
+	.list {
+		@content;
+	}
+}
+
+@mixin for-all-pages {
+	.single, .list {
+		@content;
+	}
+}
+
+// Reset
+html, body, * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-color: $font-color;
+	font-feature-settings: "liga" on;
+	-moz-font-feature-settings: "liga" on;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}

@@ -1,11 +1,11 @@
 {{ partial "header.html" . }}
 	<main>
-		<article class="post-wrapper">
+		<article class="single">
 			<time>{{ .Date.Format "January 2, 2006 15:04" }}</time>
 			<h1>{{ .Title }}</h1>
-			<span class="description">{{ .Description }}</span>
+			<span class="subheader">{{ .Description }}</span>
 			<div class="divider"></div>
-			<div class="content-wrapper">
+			<div class="content">
 				{{ .Content }}
 			</div>
 			<div class="divider"></div>
